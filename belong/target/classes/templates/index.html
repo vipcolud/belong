@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="edge" />
+    <title>belong</title>
+    <link rel="shortcut icon" type="image/png" th:href="@{/img/favicon.ico}" />
+    <link rel="stylesheet" data-th-href="@{css/style.css}"> 
+    <link rel="stylesheet" data-th-href="@{css/photoionicons.min.css}"> 
+    <link rel="stylesheet" data-th-href="@{css/photostyle.css}"> 
+</head>
+<style>
+.tooltip{font-size: 1.5rem;}
+h3{color: #333; font-size: 0.9rem;}
+</style>
+<body >
+    <div class="tooltipnav">
+	<ul>
+		<li><a class="tooltip tooltip-style1" href="/weather">天气</a></li>
+		<li><a class="tooltip tooltip-style2" href="#">图文</a></li>
+		<li><a class="tooltip tooltip-style3" href="#">音乐</a></li>
+		<li><a class="tooltip tooltip-style4" href="/video">视频</a></li>
+		<li><a class="tooltip tooltip-style5" href="/one/essay">散文</a></li>
+	</ul>
+</div>
+  <div class="wrapper">
+  <div class="slider">
+    <img id="0" class="active" >
+    <h3 class="active" id="p0" ></h3>
+    <img id="1" >
+    <h3 id="p1"></h3>
+    <img id="2" >
+    <h3  id="p2"></h3>
+    <img id="3" >
+    <h3  id="p3" ></h3>
+    <img id="4" >
+    <h3  id="p4" ></h3>
+    <img id="5" >
+    <h3 id="p5" ></h3>
+  </div>
+  <nav class="slider-nav">
+    <ul>
+      <li class="arrow">
+        <a class="previous">
+          <span>
+            <i class="ion-arrow-left-c"></i>
+          </span>
+        </a>
+      </li>
+      <li class="arrow">
+        <a class="next">
+          <span>
+            <i class="ion-arrow-right-c"></i>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+</body>
+<script data-th-inline="javascript">
+	var ctx = [[@{/}]];
+</script>
+  <script th:src="@{js/jquery.min.js}"></script>
+<script data-th-src="@{js/app/photoindex.js}"></script>
+<script data-th-src="@{js/app/web/one/paint.js}"></script>

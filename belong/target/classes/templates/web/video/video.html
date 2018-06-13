@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="edge" />
+    <title>belong</title>
+    <link rel="shortcut icon" type="image/png" th:href="@{/img/favicon.ico}" />
+    <link rel="stylesheet" data-th-href="@{../css/app.css}"> 
+</head>
+
+<style>
+.card{text-align:center}
+h3{color: #333; font-size: 1.5rem; margin:0 auto;}
+video{width:380px;margin:0 auto;}
+</style>
+
+<div class="card">
+</div>
+<script data-th-inline="javascript">
+	var ctx = [[@{/}]];
+</script>
+<script th:src="@{../js/jquery.min.js}"></script>
+<script th:src="@{../js/app/web/video/video.js}"></script>
+
+
